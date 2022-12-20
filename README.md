@@ -1,38 +1,49 @@
-# create-svelte
+# Speech Recognition
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Hi 🙂 Please go through the below steps to contribute.
 
-## Creating a project
+## Cloning the project
 
-If you're seeing this, you've probably already done this step. Congrats!
+First of all clone the project using git clone command or using the github desktop client.
+
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
+# create a new folder and inside the folder open a new git Bash & do
+git clone https://github.com/sameert89/SpeechRecognitionIEEE/
 
-# create a new project in my-app
-npm create svelte@latest my-app
+# once the project is cloned inside the bash do
+npm install
+
+# once all the dependencies are installed you can go ahead and do
+code .
+
+# This will launch vscode with the folder in it.
 ```
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once the cloning part is done. You can do the below to run the app in dev environment.
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
 npm run dev -- --open
 ```
 
-## Building
+## Commiting & adding stuff
 
-To create a production version of your app:
+If you followed above steps, then vscode should be open by now.
+Before you edit stuff always make sure to run 
 
 ```bash
-npm run build
+git pull origin master
 ```
+This will sync your code with the one from the repository. Then you may edit the files.
+Since this is a single page app, all the edits will be done in routes/+page.svelte.
+After finishing editing you can save the files and do the following to update the repo.
 
-You can preview the production build with `npm run preview`.
+```bash
+git add .
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+git commit -m "Comment what you did in the commit"
+
+git push origin master
+```
