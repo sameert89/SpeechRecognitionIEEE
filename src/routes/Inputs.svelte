@@ -1,0 +1,36 @@
+<script>
+  import Functionality from './Functionality.svelte';
+
+  import Description from './Description.svelte';
+
+	import NavBar from './Navbar.svelte';
+
+	var org = 'Alhansat';
+</script>
+
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Language
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="/">Action</a></li>
+      <li><a class="dropdown-item" href="/">Another action</a></li>
+      <li><a class="dropdown-item" href="/">Something else here</a></li>
+    </ul>
+  </div>
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Country
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="/">Action</a></li>
+      <li><a class="dropdown-item" href="/">Another action</a></li>
+      <li><a class="dropdown-item" href="/">Something else here</a></li>
+    </ul>
+  </div>
+  <button type="button" class="btn btn-primary"><i class="fa-solid fa-download"></i>download text</button>
+
+<style>
+    
+</style>
+
