@@ -45,5 +45,12 @@ git add .
 
 git commit -m "Comment what you did in the commit"
 
-git push origin master
+git push origin your_branch_name
+# put any branch name that you want and stick to it. ALl the changes you do will go into that
+# branch. It is the task of the admin to handle the merging.
 ```
+Final step is to create a pull request. Open the github repo in your browser, tap on the branches
+and change from master to the branch you created as your_branch_name.
+There will be a new button to 'Compare & pull request'. Fill the necessary details & click Create pull request.
+
+You are done!!!
