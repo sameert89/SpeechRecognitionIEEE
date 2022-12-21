@@ -2,6 +2,10 @@
 
 Hi 🙂 Please go through the below steps to contribute.
 
+Before going through with it make sure you have git client installed
+
+https://git-scm.com/download/
+
 ## Cloning the project
 
 First of all clone the project using git clone command or using the github desktop client.
