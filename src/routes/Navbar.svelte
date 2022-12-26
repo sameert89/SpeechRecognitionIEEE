@@ -21,7 +21,7 @@
 			<a href="/" class="nav-link px-1">home</a>
 			<a href="/" class="nav-link px-1">help</a>
             <a href="/" class="nav-link px-1">
-            <img src="" alt="userImage"></a>
+            <img src="" alt="user"></a>
 		</span>
 		<div
 			class="offcanvas offcanvas-start"
@@ -71,5 +71,13 @@
 </nav>
 
 <style>
+	.nav-link{
+		font-size: 1rem;
+	}
+	@media(max-width: 375){
+		.nav-link{
+			font-size: 0.8rem;
+		}
+	}
 </style>
 
