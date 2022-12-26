@@ -1,7 +1,6 @@
 <script>
-	import { COLOR } from "$env/static/private";
-import { text } from "svelte/internal";
-
+	// import { COLOR } from "$env/static/private";
+	// import { text } from "svelte/internal";
 	var org = 'Alhansat';
 </script>
 
