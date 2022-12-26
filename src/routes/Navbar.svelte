@@ -75,5 +75,13 @@ import { text } from "svelte/internal";
 </nav>
 
 <style>
+	.nav-link{
+		font-size: 1rem;
+	}
+	@media(max-width: 375){
+		.nav-link{
+			font-size: 0.8rem;
+		}
+	}
 </style>
 
