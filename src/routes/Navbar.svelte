@@ -1,4 +1,7 @@
 <script>
+	import { COLOR } from "$env/static/private";
+import { text } from "svelte/internal";
+
 	var org = 'Alhansat';
 </script>
 
@@ -14,14 +17,15 @@
 			>
 				<span class="navbar-toggler-icon" />
 			</button>
-			<a class="navbar-brand" href="/">DEVELOPERSTAR</a>
+			<a class="navbar-brand" href="/" style="color:blue; font-size: 38.88;font-family:Bebas Neue">DEVELOPERSTAR</a>
+		
 		</span>
 
 		<span class="d-flex justify-content-end">
-			<a href="/" class="nav-link px-1">home</a>
 			<a href="/" class="nav-link px-1">help</a>
+			<a href="/" class="nav-link px-1">download</a>
             <a href="/" class="nav-link px-1">
-            <img src="" alt="user"></a>
+            <img src="icon.jpg" alt="userImage" height="30px" width="30px"></a>
 		</span>
 		<div
 			class="offcanvas offcanvas-start"
