@@ -1,10 +1,8 @@
 <script>
-	// import { COLOR } from "$env/static/private";
-	// import { text } from "svelte/internal";
 	var org = 'Alhansat';
 </script>
 
-<nav class="navbar bg-light sticky-top">
+<nav class="navbar FFFFFF sticky-top">
 	<div class="container-fluid">
 		<span class="d-flex justify-content-start">
 			<button
@@ -16,16 +14,19 @@
 			>
 				<span class="navbar-toggler-icon" />
 			</button>
-			<a class="navbar-brand" href="/" style="color:blue; font-size: 38.88;font-family:Bebas Neue">DEVELOPERSTAR</a>
+			<a class="navbar-brand" href="/" style="color:#1D63E9; font-size: 38.88;font-family:inter">DEVELOPERSTAR</a>
 		
 		</span>
+		
+		
 
-		<span class="d-flex justify-content-end">
-			<a href="/" class="nav-link px-1">help</a>
-			<a href="/" class="nav-link px-1">download</a>
+		<span class="d-flex justify-content-end" style="font-size:24.55; font-family:inter" >
+			<a href="/" class="nav-link px-1" >Help</a>
+			<a href="/" class="nav-link px-1">Download</a>
             <a href="/" class="nav-link px-1">
             <img src="icon.jpg" alt="userImage" height="30px" width="30px"></a>
 		</span>
+		
 		<div
 			class="offcanvas offcanvas-start"
 			tabindex="-1"
@@ -74,13 +75,21 @@
 </nav>
 
 <style>
-	.nav-link{
-		font-size: 1rem;
+	.navbar{
+		position: relative;
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
 	}
-	@media(max-width: 375){
-		.nav-link{
-			font-size: 0.8rem;
-		}
+	.navbar::before,
+	.navbar::after{
+		content: '';
+		position: absolute;
+		z-index: -1;
+		box-shadow: 0 0 20px rgba(0, 0,0, 0.8);
+		bottom: 0;
+		left: 10px;
+		right: 10px;
+		border-radius: 100px / 10px;
 	}
 </style>
 
