@@ -1,9 +1,9 @@
 <script>
-  import Inputs from './Inputs.svelte';
+	import Inputs from './Inputs.svelte';
 
-  import Functionality from './Functionality.svelte';
+	import Functionality from './Functionality.svelte';
 
-  import Description from './Description.svelte';
+	import Description from './Description.svelte';
 
 	import NavBar from './Navbar.svelte';
 
@@ -32,14 +32,15 @@
 		href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
 		rel="stylesheet"
 	/>
-    <!-- font-awesome -->
-    <script src="https://kit.fontawesome.com/529ac0b381.js" crossorigin="anonymous"></script>
+	<!-- font-awesome -->
+	<script src="https://kit.fontawesome.com/529ac0b381.js" crossorigin="anonymous"></script>
 </svelte:head>
 
 <NavBar />
-<Description/>
-<Functionality/>
-<Inputs/>
+<!-- <Description /> -->
+<!-- <Functionality /> -->
+<!-- <Inputs /> -->
+
 <style>
-    
+	
 </style>

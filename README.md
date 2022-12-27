@@ -15,7 +15,10 @@ First of all clone the project using git clone command or using the github deskt
 # create a new folder and inside the folder open a new git Bash & do
 git clone https://github.com/sameert89/SpeechRecognitionIEEE/
 
-# once the project is cloned inside the bash do
+# once the project is cloned change to the newly created folder
+cd SpeechRecognitionIEEE
+
+# run 
 npm install
 
 # once all the dependencies are installed you can go ahead and do
@@ -45,9 +48,21 @@ Since this is a single page app, all the edits will be done in routes/+page.svel
 After finishing editing you can save the files and do the following to update the repo.
 
 ```bash
-git add .
 
-git commit -m "Comment what you did in the commit"
+
+# create a new branch
+
+git branch your_branch_name
+
+# switch to the new branch
+
+git checkout your_branch_name
+
+# add files & commit 
+
+git add . && git commit -m "Comment what you did in the commit"
+
+# push this new branch to server
 
 git push origin your_branch_name
 # put any branch name that you want and stick to it. ALl the changes you do will go into that

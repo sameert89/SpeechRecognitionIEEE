@@ -1,6 +1,5 @@
 <script>
 	var org = 'Alhansat';
-	
 </script>
 
 <nav class="navbar FFFFFF sticky-top">
