@@ -8,7 +8,7 @@
 	var org = 'Alhansat';
 </script>
 
-<div class="inputs">
+<div class="input">
 	<div class="droplan">
 		<select id="Language">
 			<option value="1">English</option>
@@ -19,6 +19,7 @@
 			<option value="6">தமிழ்</option>
 			<option value="7">മലയാളം</option>
 		</select>
+		&nbsp;&nbsp;
 	</div>
 	<div class="dropcont">
 		<select id="Country">
@@ -36,47 +37,53 @@
 			<option value="PH">Philippines</option>
 		</select>
 	</div>
-	<button type="button" class="btn btn-primary"><i class="fa-solid fa-download" />Copy Text</button>
+	<button type="button" class="btn btn-primary">Copy Text</button>
 </div>
 
 <style>
-	select {
-		/* position: relative;
-		left: 300px;
-		top: 20px; */
-		font-family: 'Inter';
-		padding: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
-	}
-
-	.dropcont {
-		/* position: relative;
-		left: 330px;
-		top: -30.2px; */
-    margin-left: 1em;
-    margin-right: 1em;
-	}
-
-	button {
-		/* position: relative;
-		left: 1071px;
-		top: -45px;
-		width: 150px; */
-		color: #fff;
-		font-weight: bold;
-		font-family: 'Inter';
-		padding: 0.5em;
-	}
-
-	button:active {
-		transform: scale(0.95);
-		box-shadow: 2px 2px 5px black;
-	}
-
-  .inputs{
+	  .input{
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    position: relative;
+    left: 100px;
   }
+  select{
+    width: 400px;
+    height: 30px;
+    position: relative;
+  }
+  button{
+    display: inline-flex;
+    padding: 5px 60px 5px 60px;
+	position: relative;
+	top: -2px;
+	left: 150px;
+  }
+  button:active{
+    transform: scale(0.95);
+    box-shadow: 2px 2px 5px black;
+  }
+  @media only screen and (max-width: 600px) {
+    .input{
+    display: inline-block;
+    position: relative;
+    left: 90px;
+  }
+  select{
+    width: 300px;
+    height: 30px;
+    position: relative;
+  }
+  button{
+	padding: 5px 40px 5px 40px;
+    position: relative;
+    left: 75px;
+    top: 7px;
+  }
+  button:active{
+    transform: scale(0.95);
+    box-shadow: 2px 2px 5px black;
+  }
+
+  }
+  
 </style>

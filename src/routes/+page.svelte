@@ -37,9 +37,9 @@
 </svelte:head>
 
 <NavBar />
-<!-- <Description /> -->
-<!-- <Functionality /> -->
-<!-- <Inputs /> -->
+ <Description /> 
+ <Functionality /> 
+ <Inputs /> 
 
 <style>
 	
