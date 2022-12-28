@@ -1,8 +1,8 @@
 <script>
 	import {CopyRegular} from 'svelte-awesome-icons';
 	import {lang, country, results} from './stores';
-	let language = 'English';
-	let cont = 'India';
+	let language = 'en';
+	let cont = 'IN';
 	function handleChange(){
 		lang.set(language);
 		country.set(cont);
