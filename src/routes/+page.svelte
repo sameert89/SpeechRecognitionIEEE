@@ -6,11 +6,11 @@
 	import Description from './Description.svelte';
 
 	import NavBar from './Navbar.svelte';
-
-	var org = 'Alhansat';
+	
 </script>
 
 <svelte:head>
+	<!-- bootstrap -->
 	<link
 		href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
 		rel="stylesheet"
@@ -32,15 +32,16 @@
 		href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
 		rel="stylesheet"
 	/>
-	<!-- font-awesome -->
-	<script src="https://kit.fontawesome.com/529ac0b381.js" crossorigin="anonymous"></script>
+	<script src = "./sR.js">
+	</script>	
 </svelte:head>
+<div class="d-flex flex-column justify-content-center ">
+	<NavBar />
+	<Description /> 
+	<Functionality /> 
+	<Inputs /> 
+</div>
 
-<NavBar />
- <Description /> 
- <Functionality /> 
- <Inputs /> 
 
 <style>
-	
 </style>

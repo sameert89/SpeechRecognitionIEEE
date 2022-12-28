@@ -1,5 +1,4 @@
 <script>
-	var org = 'Alhansat';
 </script>
 
 <nav class="navbar FFFFFF sticky-top">
@@ -14,7 +13,7 @@
 			>
 				<span class="navbar-toggler-icon" />
 			</button>
-			<a class="navbar-brand" href="/" style="color:#1D63E9; font-size: 38.88;font-family:inter">DEVELOPERSTAR</a>
+			<a class="navbar-brand" href="/" style="color:#1D63E9; font-size: 38.88;font-family:inter">    DEVELOPERSTAR</a>
 		
 		</span>
 		

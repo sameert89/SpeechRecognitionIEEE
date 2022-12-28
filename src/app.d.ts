@@ -7,3 +7,10 @@ declare namespace App {
 	// interface PageData {}
 	// interface Platform {}
 }
+// export {};
+
+// declare global {
+//   interface Window {
+//     SpeechRecognition: any; // 👈️ turn off type checking
+//   }
+// }
