@@ -36,4 +36,12 @@
 		font-weight: 600;
 		margin-bottom: 1em;
 	}
+	@media only screen and (max-width: 600px) {
+		.heading{
+			font-size: 3em;
+		}
+		.description{
+			font-size: 1em;
+		}
+	}
 </style>
