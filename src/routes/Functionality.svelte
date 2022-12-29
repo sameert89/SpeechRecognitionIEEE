@@ -14,25 +14,32 @@
 		recognition.lang = $lang + '-' + $country;
 		recognition.continuous = true;
 		recognition.interimResults = true;
-		let final_transcript = '';
-		recognition.onstart = () => {
-			final_transcript = '';
-		};
+		// let final_transcript = '';
+		// recognition.onstart = () => {
+		// 	final_transcript = '';
+		// };
+		// recognition.onresult = (event) => {
+		// 	let interim_transcript = '';
+		// 	for (let i = event.resultIndex; i < event.results.length; ++i) {
+		// 		if (event.results[i].isFinal) {
+		// 			final_transcript += event.results[i][0].transcript;
+		// 		} else {
+		// 			interim_transcript += event.results[i][0].transcript;
+		// 		}
+		// 	}
+
+		// 	results.set(interim_transcript);
+		// };
 		recognition.onresult = (event) => {
 			let interim_transcript = '';
-			for (let i = event.resultIndex; i < event.results.length; ++i) {
-				if (event.results[i].isFinal) {
-					final_transcript += event.results[i][0].transcript;
-				} else {
-					interim_transcript += event.results[i][0].transcript;
-				}
-			}
-
+			const curr = event.resultIndex;
+			const { transcript } = event.results[curr][0];
+			interim_transcript+=transcript;
 			results.set(interim_transcript);
-		};
-		recognition.onend = () => {
-			results.set(final_transcript);
-		};
+		}
+		// recognition.onend = () => {
+		// 	results.set(final_transcript);
+		// };
 	});
 
 	
