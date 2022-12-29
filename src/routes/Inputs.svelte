@@ -8,8 +8,14 @@
 		country.set(cont);
 	}
 	function handleClick(){
-		navigator.clipboard.writeText($results);
-		alert("Text Copied Successfully!");
+		navigator.clipboard.writeText($results)
+		.then(()=>{
+			alert("Text Copied Successfully!");
+		})
+		.catch(()=>{
+			alert("Something went Wrong");
+		});
+		
 	}
 </script>
 
